@@ -3,8 +3,9 @@ return{
         name = "catppuccin",
         priority = 1000, 
         config = function()
+          vim.cmd.colorscheme "catppuccin"
           require("catppuccin").setup({
-            flavour = "auto",
+            flavour = "mocha",
             background = { light = "latte", dark = "mocha" },
             transparent_background = false,
             show_end_of_buffer = false,
@@ -15,8 +16,10 @@ return{
               treesitter = true,
               notify = false,
               mini = { enabled = true },
+              lualine = true,
             },
           })
-          vim.cmd.colorscheme "catppuccin"
         end,
 }
+
+

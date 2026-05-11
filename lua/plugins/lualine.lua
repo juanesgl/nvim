@@ -1,5 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
+  dependencies = { 'catppuccin/nvim' },
   config = function()
     local mode = {
       'mode',
@@ -40,7 +41,7 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'nord', -- Set theme based on environment variable
+        theme = require('catppuccin.utils.lualine')(), -- Directly pass the theme table
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        

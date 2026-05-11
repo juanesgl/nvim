@@ -7,7 +7,7 @@ return {
     -- - Bridges the gap between LSP config names (e.g. "lua_ls") and actual Mason package names (e.g. "lua-language-server").
     -- - Used here only to allow specifying language servers by their LSP name (like "lua_ls") in `ensure_installed`.
     -- - It does not auto-configure servers — we use vim.lsp.config() + vim.lsp.enable() explicitly for full control.
-    'mason-org/mason-lspconfig.nvim',
+    { 'mason-org/mason-lspconfig.nvim', config = true },
     -- mason-tool-installer:
     -- - Installs LSPs, linters, formatters, etc. by their Mason package name.
     -- - We use it to ensure all desired tools are present.

@@ -3,7 +3,6 @@ return{
         name = "catppuccin",
         priority = 1000, 
         config = function()
-          vim.cmd.colorscheme "catppuccin"
           require("catppuccin").setup({
             flavour = "mocha",
             background = { light = "latte", dark = "mocha" },
@@ -19,7 +18,7 @@ return{
               lualine = true,
             },
           })
-        end,
+          vim.cmd.colorscheme "catppuccin"
 }
 
 

@@ -41,7 +41,7 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = require('catppuccin.utils.lualine')(), -- Directly pass the theme table
+        theme = 'auto',
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        

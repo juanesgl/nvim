@@ -11,14 +11,17 @@ return{
             integrations = {
               cmp = true,
               gitsigns = true,
-              nvimtree = true,
               treesitter = true,
               notify = false,
               mini = { enabled = true },
               lualine = true,
+              which_key = true,
+              indent_blankline = { enabled = true },
+              flash = true,
             },
           })
           vim.cmd.colorscheme "catppuccin"
+        end,
 }
 
 
